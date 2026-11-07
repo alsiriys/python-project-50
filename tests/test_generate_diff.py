@@ -2,7 +2,7 @@ from gendiff import generate_diff
 
 
 def read_fixture(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
+    with open(file_path, encoding='utf-8') as f:
         return f.read()
 
 
