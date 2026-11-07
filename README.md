@@ -1,3 +1,4 @@
+[![Python CI](https://github.com/alsiriys/python-project-50/actions/workflows/pytests.yml/badge.svg)](https://github.com/alsiriys/python-project-50/actions/workflows/pytests.yml)
 # Вычислитель отличий (Python)
 
 [![hexlet-check](https://github.com/alsiriys/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/alsiriys/python-project-50/actions)
