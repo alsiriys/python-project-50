@@ -23,8 +23,11 @@ cd python-project-50
 
 ## Использование
 
-<!-- Сравнение плоских файлов (JSON)
+<!-- 
+    Сравнение плоских файлов (JSON)
     https://asciinema.org/a/UKPRT9qmcz2jLzdo-->
+    Сравнение плоских файлов (YAML)
+    https://asciinema.org/a/JLwZpXt2EVHuUoyX
     
 
 ---
