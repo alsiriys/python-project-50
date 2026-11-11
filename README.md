@@ -25,11 +25,13 @@ cd python-project-50
 
 <!-- 
     Сравнение плоских файлов (JSON)
-    https://asciinema.org/a/UKPRT9qmcz2jLzdo-->
+    https://asciinema.org/a/UKPRT9qmcz2jLzdo-
     Сравнение плоских файлов (YAML)
     https://asciinema.org/a/JLwZpXt2EVHuUoyX
+    Рекурсивное сравнение
+    https://asciinema.org/a/g6b7RXodmxquDomS
     
-
+->
 ---
 
 <details>
