@@ -6,7 +6,7 @@ from gendiff.parsers import parse
 
 def read_fixture(file_path):
     with open(file_path, encoding="utf-8") as f:
-        return f.read()
+        return f.read().rstrip("\n")
 
 
 def test_generate_diff_json():
@@ -39,6 +39,30 @@ def test_generate_diff_nested_yaml():
     expected_path = "tests/files_for_testing/new_file_expected_text.txt"
     expected = read_fixture(expected_path)
     assert generate_diff(file1, file2) == expected
+
+
+def test_generate_diff_plain_json():
+    file1 = "tests/files_for_testing/new_file1.json"
+    file2 = "tests/files_for_testing/new_file2.json"
+    expected_path = "tests/files_for_testing/expected_plain.txt"
+    expected = read_fixture(expected_path)
+    assert generate_diff(file1, file2, format_name="plain") == expected
+
+
+def test_generate_diff_plain_yaml():
+    file1 = "tests/files_for_testing/new_file1.yml"
+    file2 = "tests/files_for_testing/new_file2.yaml"
+    expected_path = "tests/files_for_testing/expected_plain.txt"
+    expected = read_fixture(expected_path)
+    assert generate_diff(file1, file2, format_name="plain") == expected
+
+
+def test_generate_flat_difference():
+    file1 = "tests/files_for_testing/file1.json"
+    file2 = "tests/files_for_testing/file2.json"
+    expected_path = "tests/files_for_testing/expected_flat_plain.txt"
+    expected = read_fixture(expected_path)
+    assert generate_diff(file1, file2, format_name="plain") == expected
 
 
 def test_unknown_file_format():
