@@ -30,7 +30,8 @@ cd python-project-50
     https://asciinema.org/a/JLwZpXt2EVHuUoyX
     Рекурсивное сравнение
     https://asciinema.org/a/g6b7RXodmxquDomS
-    
+    Плоский формат
+    https://asciinema.org/a/0tErb3i5k1eQjqks
 ->
 ---
 
