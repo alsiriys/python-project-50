@@ -1,8 +1,14 @@
 import os
 
 from gendiff.build_tree import build_tree
+from gendiff.format.plain import format_plain
 from gendiff.format.stylish import format_stylish
 from gendiff.parsers import parse
+
+FORMATTERS = {
+    "stylish": format_stylish,
+    "plain": format_plain,
+}
 
 
 def get_format(file_path):
@@ -11,6 +17,9 @@ def get_format(file_path):
 
 
 def generate_diff(file_path1, file_path2, format_name="stylish"):
+    if format_name not in FORMATTERS:
+        raise ValueError(f"Unknown format: {format_name}")
+
     with (
         open(file_path1, encoding="utf-8") as f1,
         open(file_path2, encoding="utf-8") as f2,
@@ -19,8 +28,4 @@ def generate_diff(file_path1, file_path2, format_name="stylish"):
         data2 = parse(f2.read(), get_format(file_path2))
 
     tree = build_tree(data1, data2)
-
-    if format_name == "stylish":
-        return format_stylish(tree)
-
-    raise ValueError(f"Unknown format: {format_name}")
+    return FORMATTERS[format_name](tree)
