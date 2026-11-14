@@ -1,6 +1,7 @@
 import os
 
 from gendiff.build_tree import build_tree
+from gendiff.format.json import format_json
 from gendiff.format.plain import format_plain
 from gendiff.format.stylish import format_stylish
 from gendiff.parsers import parse
@@ -8,6 +9,7 @@ from gendiff.parsers import parse
 FORMATTERS = {
     "stylish": format_stylish,
     "plain": format_plain,
+    "json": format_json,
 }
 
 
