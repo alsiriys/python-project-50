@@ -1,3 +1,5 @@
+import json
+
 import pytest
 
 from gendiff import generate_diff
@@ -63,6 +65,15 @@ def test_generate_flat_difference():
     expected_path = "tests/files_for_testing/expected_flat_plain.txt"
     expected = read_fixture(expected_path)
     assert generate_diff(file1, file2, format_name="plain") == expected
+
+
+def test_diff_json_format():
+    file1 = "tests/files_for_testing/new_file1.yml"
+    file2 = "tests/files_for_testing/new_file2.yaml"
+    expected_path = "tests/files_for_testing/expected_json.txt"
+    result = generate_diff(file1, file2, format_name="json")
+    expected = read_fixture(expected_path)
+    assert json.loads(result) == json.loads(expected)
 
 
 def test_unknown_file_format():
