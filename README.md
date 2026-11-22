@@ -14,13 +14,11 @@
 
 ## Установка
 
-<!-- 
 git clone https://github.com/alsiriys/python-project-50.git
 cd python-project-50
 uv sync
 uv tool install .
 uv tool update-shell
- -->
 
 ```bash
 git clone https://github.com/alsiriys/python-project-50.git
@@ -29,7 +27,7 @@ cd python-project-50
 
 ## Использование
 
-<!-- 
+
     Сравнение плоских файлов (JSON)
     https://asciinema.org/a/UKPRT9qmcz2jLzdo-
     Сравнение плоских файлов (YAML)
@@ -40,8 +38,7 @@ cd python-project-50
     https://asciinema.org/a/0tErb3i5k1eQjqks
     Все три формата работают: stylish (по умолчанию), plain, json
     https://asciinema.org/a/B1JZbK34WgDLdwqh
-->
----
+
 
 <details>
 <summary>Автоматические тесты Хекслета</summary>
