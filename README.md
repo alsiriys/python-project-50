@@ -25,16 +25,20 @@ uv tool update-shell
 ## Использование
 
 
-    Сравнение плоских файлов (JSON)
-    https://asciinema.org/a/UKPRT9qmcz2jLzdo-
-    Сравнение плоских файлов (YAML)
-    https://asciinema.org/a/JLwZpXt2EVHuUoyX
-    Рекурсивное сравнение
-    https://asciinema.org/a/g6b7RXodmxquDomS
-    Плоский формат
-    https://asciinema.org/a/0tErb3i5k1eQjqks
-    Все три формата работают: stylish (по умолчанию), plain, json
-    https://asciinema.org/a/B1JZbK34WgDLdwqh
+Сравнение плоских файлов (JSON)
+https://asciinema.org/a/UKPRT9qmcz2jLzdo
+
+ Сравнение плоских файлов (YAML)
+https://asciinema.org/a/JLwZpXt2EVHuUoyX
+
+Рекурсивное сравнение
+https://asciinema.org/a/g6b7RXodmxquDomS
+
+Плоский формат
+https://asciinema.org/a/0tErb3i5k1eQjqks
+
+Все три формата работают: stylish (по умолчанию), plain, json
+https://asciinema.org/a/B1JZbK34WgDLdwqh
 
 
 <details>
