@@ -19,7 +19,9 @@ def format_plain(tree, path=""):
         current_path = f"{path}.{key}" if path else key
 
         if node_type == "nested":
-            lines.append(format_plain(node["children"], current_path))
+            nested = format_plain(node["children"], current_path)
+            if nested:
+                lines.append(nested)
         elif node_type == "added":
             val = format_value(node["value"])
             lines.append(
