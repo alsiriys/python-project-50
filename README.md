@@ -14,15 +14,12 @@
 
 ## Установка
 
+```bash
 git clone https://github.com/alsiriys/python-project-50.git
 cd python-project-50
 uv sync
 uv tool install .
 uv tool update-shell
-
-```bash
-git clone https://github.com/alsiriys/python-project-50.git
-cd python-project-50
 ```
 
 ## Использование
